@@ -41,7 +41,7 @@ namespace Custom.XA.Feature.ScribanExtensions.Caching.EventHandlers
 
         private bool ShouldHandle(Item item)
         {
-            return item.InheritsFrom(Constants.Templates.ScribanInclude.TemplateId);
+            return item.InheritsFrom(Constants.Templates.ScribanInclude.TemplateId) || item.InheritsFrom(Constants.Templates.Scriban.TemplateId);
         }
 
     }
